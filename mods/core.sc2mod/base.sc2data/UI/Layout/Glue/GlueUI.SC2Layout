@@ -90,6 +90,10 @@
             <State name="Tychus">
                 <Action type="SetProperty" frame="$this" customSoundtrack="Music_Silence"/>
             </State>
+            
+            <State name="Stetmann">
+                <Action type="SetProperty" frame="$this" customSoundtrack="Music_Silence"/>
+            </State>
 
             <State name="WCS2017">
                 <!-- "WCS 2017" in the Background Model pulldown -->
@@ -117,6 +121,21 @@
                 <!-- "WCS 2018" in the Background Model pulldown -->
                 <Action type="SetProperty" frame="$this" customSoundtrack="Music_Silence"/>
             </State>
+        </StateGroup>
+        
+        
+        <!--
+        ~~~~~~~~~~~~~~~~~~~~~~~
+        IGR State
+        ~~~~~~~~~~~~~~~~~~~~~~~
+        Gets set/unset when the IGR Benefits Panel in ScreenForegroundSC2 is toggled by code. Super hacky.
+        --> 
+        
+        <StateGroup name="IGRState">
+            <DefaultState val="Inactive"/>
+            
+            <State name="Active"/>
+            <State name="Inactive"/>
         </StateGroup>
         
         
